@@ -19,11 +19,17 @@
 				background-color: green;	
 				padding-top: 20px;
 				padding-left: 20px;
+				position: relative;
+				top: 20px;
+				left: 20px;
 			}
 			#absolute-box{
 				background-color: red;
 				padding-top: 220px;
 				padding-left: 20px;
+				position: absolute;
+				top: 220px;
+				left: 20px;
 			}
 		</style>
 	</head>
@@ -38,19 +44,16 @@
 				Create another div with id relative-box inside the #container div having properties, background color to green, and position it relatively 20px from the top and 20px from the left of the #container div
 
 				Create a third div with id absolute-box,set the background color to red, and position it absolutely at 220px from the top and 20px from the left of the container div -->
-      
-			<div id="static-box">
+
+			<div class="box" id="static-box" >
 			</div>
-			<div id="relative-box">
+			<div class="box" id="relative-box">
 
 			</div>
-			<div id="absolute-box">
+			<div class="box" id="absolute-box">
 
 			</div>
-			<div class="box">
-
-			</div>
-
+			
 		</div>
 	</body>
 </html>
