@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Codedamn Lab</title>
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+			
+			<link rel="stylesheet" href="style.css" />
+			<script src="script.js"></script>
+      <style>
+        /* write your CSS code here
+        Create an HTML page with a div element having an id 'container'. Inside the 'container', create 6 div elements with class 'box'.
+
+        Apply a CSS rule to the '.box' class elements to make them display in columns with a column-count of 2.
+
+        Select the 3rd div element with class 'box' and make it span across 2 columns.
+
+        Write a JavaScript function changeColumnCount that takes an integer as an argument and sets the column-count of the div with id 'container' to that value.*/
+#container{
+    column-count: 2;
+}
+.box {
+    column-span: all;
+}
+      </style>
+      <script>
+        // write your JavaScript code here
+
+
+function changeColumnCount(columnValue) {
+   let x = 3;
+    const element = document.getElementById('container');
+    if (container) {
+        container.style.columnCount = columnValue;
+      } else {
+        console.error("Element with ID 'container' not found.");
+      }
+    }
+changeColumnCount(x);
+      </script>
+	</head>
+	<body>
+		<!-- write your code here -->
+		<div id="container" style="column-count: 2;">
+			<div class="box">
+			</div>
+			<div class="box">
+			</div>
+			<div class="box">
+			</div>
+			<div class="box">
+			</div>
+			<div class="box">
+			</div>
+			<div class="box">
+			</div>
+		</div>
+
+	</body>
+</html>
